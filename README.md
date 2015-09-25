@@ -11,7 +11,8 @@ Edit defaults at top of `js/jquery-flickr.js`. In particular Flickr `api_key` is
 Generates the HTML5 `srcset` attribute with various sizes of images from Flickr `photo_id`. [Some modern browsers](http://caniuse.com/#search=srcset) will be able use the information to load the most appropriately sized image based on viewscreen size. The user-configurable data attribute `defaultsrcsize` is used to populate the image `src` attribute for browsers that don't understand `srcset`. 
 
 ```HTML
-<img src="loading.gif" data-flickr-photoid="###########" data-flickr-defaultsrcsize="Small 320"/>
+<img src="loading.gif" data-flickr-photoid="###########" 
+                       data-flickr-defaultsrcsize="Small 320"/>
 ```
 ```javascript
 jQuery(document).ready(function() {
